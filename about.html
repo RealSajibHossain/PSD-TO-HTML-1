@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>University Website Design - East Tutorials</title>
+</head>
+
+<body>
+    <header class="sub-header">
+        <nav>
+            <a href="index.html"><img src="assests/images/logo.png" alt="logo" class="brand-logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class=" fa fa-times" onclick="hideMenu();"></i>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="course.html">course</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu();"></i>
+        </nav>
+        <div class="hero-container">
+            <h1>about us</h1>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolore eum quae, dignissimos
+                    maxime cupiditate suscipit non sint iure deleniti. Officia delectus culpa nulla, vel unde maxime
+                    illo, explicabo nisi totam quibusdam dignissimos, inventore atque optio incidunt natus voluptas in
+                    ipsum dolorum nihil magnam fugit consectetur. Nihil quod repellat cumque reiciendis similique,
+                    assumenda repellendus officiis?</p>
+                    <a href="" class="hero-btn red-btn">explore now</a>
+            </div>
+            <div class="about-col">
+                <img src="assests/images/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===========Footer Section===============-->
+
+    <footer>
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia hic quis eligendi<br> nobis voluptas cum
+            possimus sunt, magnam dignissimos velit eos cupiditate modi fuga!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials</p>
+    </footer>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
